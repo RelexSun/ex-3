@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap");
+/* =================================== css reset =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+/* ===================================== start here ====================================== */
+
+body {
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+  padding: 2rem 6rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-size: 1.25rem;
+}
+
+.logos {
+  display: flex;
+  gap: 1rem;
+}
+
+.Name a {
+  font-size: 40px;
+}
+
+li:hover {
+  opacity: 0.5;
+}
+
+
+/* ===================================== Body ====================================== */
+
+
+h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.img-content {
+  margin-bottom: 8rem;
+  height: 500px;
+}
+
+.b-container {
+  transition: 0.2s ease-in-out;
+}
+
+.b-container:hover {
+  box-shadow: rgba(99, 99, 99, 0.6) 0px 8px 40px 0px;
+}
+
+.b-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 4rem;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.737);
+  top: 1000px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+.b-container:hover .overlay {
+  top: 0;
+}

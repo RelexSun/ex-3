@@ -1,0 +1,26 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-container {
+  position: relative;
+  overflow: hidden;
+  border: solid;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.239);
+  top: 1000px;
+  transition: 0.3s ease-in-out;
+}
+
+.b-container:hover .overlay {
+  top: 0;
+}
